@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>posgrep demo</title>
+</head>
+<body>
+
+<div style="margin:auto;width:700px;font-size:16pt">
+
+<form action="/search" method="POST">
+<input type="text" name="q" width="60" value="" />
+<input type="submit" value="submit" />
+</form>
+<br>
+<br>
+<br>
+
+<ul>
+  <li>使える演算子: ()|.*</li>
+    <li>品詞は[[と]]でくくってください</li>
+</ul>
+
+<br><br>
+
+<% @fp.each do |line| %>
+<%= line%><br/>
+<% end %>
+</div>
+
+</body>
+</html>
